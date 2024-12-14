@@ -1,13 +1,29 @@
 package io.github.jaovcarvalho.apiproducts.model.entity;
 
 
+import jakarta.persistence.*;
+
 // POJO -> Plan Old Java Object
 // Classe com os atributos privados e os methods getters e setters
+@Entity
+@Table(name = "product")
 public class Product {
 
+    /*
+    * Uma dica é utilizar o comando `ctrl + space` para ver as opções possíveis
+    * Exemplo.: @GeneratedValue(`ctrl + space`)
+    * */
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    // @Columm(...) define o nome do meu atributo na coluna da tabela
+    @Column(name = "id")
     private Integer id;
+    @Column(name = "name")
     private String name;
+    @Column(name = "description")
     private String description;
+    @Column(name = "price")
     private Double price;
 
     public Integer getId() {
