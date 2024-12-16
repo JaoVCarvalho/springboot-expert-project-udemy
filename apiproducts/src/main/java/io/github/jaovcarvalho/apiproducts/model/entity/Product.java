@@ -15,10 +15,9 @@ public class Product {
     * */
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     // @Columm(...) define o nome do meu atributo na coluna da tabela
     @Column(name = "id")
-    private Integer id;
+    private String id;
     @Column(name = "name")
     private String name;
     @Column(name = "description")
@@ -26,11 +25,11 @@ public class Product {
     @Column(name = "price")
     private Double price;
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 
