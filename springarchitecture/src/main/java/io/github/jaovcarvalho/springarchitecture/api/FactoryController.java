@@ -13,7 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class FactoryController {
 
     @Autowired
-    // @Qualifier serve para identificar um único objeto(Bean) dentre outros do mesmo tipo que estão sendo mapeados pelo Container Spring
+    // A anotação @Qualifier é usada para identificar um único Bean entre vários do mesmo tipo
+    // que estão sendo gerenciados pelo contêiner do Spring, permitindo especificar qual deles deve ser injetado.
     @Qualifier("ElectricEngine")
     private Engine engine;
 

@@ -4,11 +4,17 @@ import io.github.jaovcarvalho.springarchitecture.automaker.Engine;
 import io.github.jaovcarvalho.springarchitecture.automaker.EngineType;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 @Configuration
 public class AutomakerConfiguration {
 
     @Bean(name = "AspiratedEngine")
+    /* A anotação @Primary é utilizada para definir o Bean padrão.
+     * Caso nenhum Bean específico seja explicitamente definido,
+     * o Spring irá selecionar automaticamente o Bean marcado com @Primary como padrão.
+     */
+    @Primary
     public Engine createAspiratedEngine(){
         Engine engine = new Engine();
         engine.setNumber(1010);
