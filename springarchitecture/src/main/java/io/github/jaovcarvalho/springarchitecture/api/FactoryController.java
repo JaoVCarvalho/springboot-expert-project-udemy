@@ -15,7 +15,8 @@ public class FactoryController {
     @Autowired
     // A anotação @Qualifier é usada para identificar um único Bean entre vários do mesmo tipo
     // que estão sendo gerenciados pelo contêiner do Spring, permitindo especificar qual deles deve ser injetado.
-    @Qualifier("ElectricEngine")
+    //@Qualifier("ElectricEngine")
+    @Turbo // É possível criar sua própria anotação
     private Engine engine;
 
     @PostMapping
