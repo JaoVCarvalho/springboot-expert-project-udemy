@@ -1,8 +1,7 @@
-package io.github.jaovcarvalho.springarchitecture.api;
+package io.github.jaovcarvalho.springarchitecture.automaker.api;
 
 import io.github.jaovcarvalho.springarchitecture.automaker.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,7 +14,7 @@ public class FactoryController {
     @Autowired
     // A anotação @Qualifier é usada para identificar um único Bean entre vários do mesmo tipo
     // que estão sendo gerenciados pelo contêiner do Spring, permitindo especificar qual deles deve ser injetado.
-    //@Qualifier("ElectricEngine")
+    // @Qualifier("ElectricEngine")
     @Turbo // É possível criar sua própria anotação
     private Engine engine;
 

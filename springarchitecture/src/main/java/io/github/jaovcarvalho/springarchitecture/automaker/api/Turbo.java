@@ -1,4 +1,4 @@
-package io.github.jaovcarvalho.springarchitecture.api;
+package io.github.jaovcarvalho.springarchitecture.automaker.api;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 

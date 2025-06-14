@@ -1,4 +1,4 @@
-package io.github.jaovcarvalho.springarchitecture.configuration;
+package io.github.jaovcarvalho.springarchitecture.automaker.configuration;
 
 import io.github.jaovcarvalho.springarchitecture.automaker.Engine;
 import io.github.jaovcarvalho.springarchitecture.automaker.EngineType;
